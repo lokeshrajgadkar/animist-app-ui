@@ -1,0 +1,111 @@
+.row {
+  color: crimson;
+  margin-left: 10px;
+  white-space: nowrap;
+  cursor: grab;
+  justify-content: center;
+}
+/* overflow-y: hidden;
+  overflow-x: scroll; */
+
+.btn {
+  background: #7e1a1a;
+  border-radius: 100%;
+  position: absolute;
+  /* opacity: 0.2; */
+}
+
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  cursor: grab;
+  padding: 15px;
+  scrollbar-width: 2px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row-posters::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.row-posters::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+.row-poster {
+  max-height: 15rem;
+  max-width: 10rem;
+  pointer-events: none;
+  padding: 1px;
+  margin: 0.2rem;
+  border-radius: 2rem;
+  background-color: rgb(144, 196, 241);
+}
+
+.row-poster:hover {
+  cursor: grab;
+  cursor: -webkit-grab;
+  background-color: rgb(217, 254, 32);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card {
+  padding: 4px;
+  margin: 0.5rem;
+  /* border-radius: 3rem; */
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  display: flex;    
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+    cursor: grab;
+    cursor: -webkit-grab;
+    background: rgba( 229, 222, 60, 0.6 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+/* .card img {
+  background: rgb(1, 11, 11);
+  background: linear-gradient(
+    0deg,
+    rgba(1, 11, 11, 1) 0%,
+    rgba(185, 226, 226, 1) 38%,
+    rgba(250, 250, 250, 1) 99%
+  );
+} */
+
+.title {
+  color: rgb(255, 255, 254);
+  overflow: hidden;
+  font-weight: 500;
+  margin: 2px;
+  padding: 0.5rem;
+  width: 13rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
