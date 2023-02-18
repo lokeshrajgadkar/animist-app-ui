@@ -20,7 +20,7 @@
   overflow-y: hidden;
   overflow-x: scroll;
   cursor: grab;
-  padding: 15px;
+  padding: 10px;
   scrollbar-width: 2px;
   display: flex;
   align-items: center;
