@@ -5,6 +5,7 @@ const Details = ({ title }) => {
   str = str.replace(/\s+/g, "-").toLowerCase();
   console.log(str); // "sonic-free-games"
 
+  
   return <div>Detail: {title}</div>;
 };
 
