@@ -4,14 +4,21 @@ import Popular from './Popular'
 import TopAir from './TopAir'
 import requests from '../Requests'
 import Row from './Row'
+import Navbar from '../Navbar'
+import Video from './Video'
+import AnimeInfo from './AnimeInfo'
+import Info from './Info'
+import Nav from '../Nav'
 
 const HomePage = () => {
   return (
     <div className='home'>
-        {/* <Popular/> */}
-        <br></br>
-        {/* <TopAir/> */}
-        <Row title='POPULAR'
+        {/* <Navbar /> */}
+        {/* <AnimeInfo /> */}
+        <Nav />
+        <Info />
+        {/* <Video/> */}
+        {/* <Row title='POPULAR'
           fetchUrl={requests.getPopular}
           isLargeRow
         />
@@ -22,7 +29,7 @@ const HomePage = () => {
         <Row title='ANIME MOVIES'
         fetchUrl={requests.getMovies}
         isLargeRow
-        />
+        /> */}
     </div>
   )
 }

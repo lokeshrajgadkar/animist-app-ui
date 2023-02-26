@@ -4,6 +4,7 @@
   white-space: nowrap;
   cursor: grab;
   justify-content: center;
+  scroll-behavior: smooth;
 }
 /* overflow-y: hidden;
   overflow-x: scroll; */
