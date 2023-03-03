@@ -47,7 +47,7 @@ const Info = () => {
        top-[20%] p-4 md:p-8"
         >
           <h1 className="text-3xl md:text-5xl font-bold">
-            {truncateString(anime?.title, 80)}
+            {truncateString(anime?.title, 50)}
           </h1>
           <div className="my-4">
             <button className="border bg-red-300 text-black border-gray-300 py-2 px-5">

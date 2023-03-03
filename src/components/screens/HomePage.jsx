@@ -18,7 +18,7 @@ const HomePage = () => {
         <Nav />
         <Info />
         {/* <Video/> */}
-        {/* <Row title='POPULAR'
+        <Row title='POPULAR'
           fetchUrl={requests.getPopular}
           isLargeRow
         />
@@ -29,7 +29,7 @@ const HomePage = () => {
         <Row title='ANIME MOVIES'
         fetchUrl={requests.getMovies}
         isLargeRow
-        /> */}
+        />
     </div>
   )
 }
