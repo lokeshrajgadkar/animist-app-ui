@@ -11,7 +11,7 @@ const AnimeCard = ({ item }) => {
       };
 
   return (
-    <div className="w-[10px] sm:w-[200px] lg:w-[220px] inline-block cursor-pointer relative p-2">
+    <div className="w-[100px] sm:w-[200px] lg:w-[220px] inline-block cursor-pointer relative p-2">
       <img
         className="w-full h-auto block"
         src={`${item?.image}`}
