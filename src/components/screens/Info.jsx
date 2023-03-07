@@ -43,7 +43,7 @@ const Info = () => {
     <>
       <div className="w-full h-[550px] text-white">
         <div className="w-full h-full">
-          <div className="absolute w-full h-[550px] bg-gradient-to-r from-black"></div>
+          <div className="absolute w-full md:h-[550px] sm:h-[450px] bg-gradient-to-r from-black"></div>
           <img
             className="w-full h-full object-cover"
             src={`${anime?.animeImg}`}
@@ -51,8 +51,8 @@ const Info = () => {
           />
         </div>
         <div
-          className="absolute w-ful
-       top-[20%] p-4 md:p-8"
+          className="absolute w-full
+       top-[20%] p-4 md:p-6 sm:p-4"
         >
           <h1 className="text-3xl md:text-5xl font-bold">
             {truncateString(anime?.animeTitle, 50)}
