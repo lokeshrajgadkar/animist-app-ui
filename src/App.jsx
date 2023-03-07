@@ -5,11 +5,11 @@ import HomePage from "./components/screens/HomePage";
 import Popular from "./components/screens/Popular";
 
 function App() {
-  return <div>
-    {/* <Homescreen/> */}
-    {/* <Popular /> */}
-    <HomePage/>
-  </div>;
+  return (
+    <div>
+      <HomePage />
+    </div>
+  );
 }
 
 export default App;

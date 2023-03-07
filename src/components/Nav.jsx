@@ -9,7 +9,7 @@ const Nav = () => {
       <div className="">
       <form action="" className="relative mx-auto w-max">
         <input placeholder="Search Anime" type="search" 
-              className="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-neutral-400 pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4" />
+              className="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border text-white font-bold bg-gray-600/50 pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4" />
         <svg xmlns="http://www.w3.org/TR/SVG" className="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-gray-500 px-3.5 peer-focus:border-lime-300 peer-focus:stroke-lime-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>

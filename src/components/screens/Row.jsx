@@ -11,28 +11,36 @@ const Row = ({ title, fetchUrl, isLargeRow = false }) => {
   // const dataFetchedRef = useRef(false);
   const [myData, setMyData] = useState([]);
   const [width, setWidth] = useState(0);
-  const row = useRef();
+  // const row = useRef();
 
   useEffect(() => {
     // if (dataFetchedRef.current) return;
     // dataFetchedRef.current = true;
     //     console.log(row.current.scrollWidth - row.current.scrollWidth);
     //  setWidth(row.current.scrollWidth + row.current.scrollWidth)
-    fetchData();
+    // fetchData();
+    try {
+      axios.get(fetchUrl)
+      .then((res) => {
+          setMyData(res.data);
+        });
+    } catch (err) {
+      throw new Error(err.message);
+    }
   }, []);
 
   async function fetchData() {
 
-    try {
-      const res = await axios.get(fetchUrl);
-      console.log(
-        "🚀 ~ file: Info.jsx:21 ~ getData ~ res.data:",
-        res.data.results
-      );
-      setMyData(res.data.results);
-    } catch (err) {
-      throw new Error(err.message);
-    }
+    // try {
+    //   const res = await axios.get(fetchUrl);
+    //   console.log(
+    //     "🚀 ~ file: Info.jsx:21 ~ getData ~ res.data:",
+    //     res.data
+    //   );
+    //   setMyData(res.data);
+    // } catch (err) {
+    //   throw new Error(err.message);
+    // }
     // try {
     //   const response = await axios.get(fetchUrl);
     //   setMyData(response.data.results);

@@ -1,4 +1,5 @@
 import React from 'react'
+import Details from './Details';
 
 const AnimeCard = ({ item }) => {
 
@@ -11,19 +12,21 @@ const AnimeCard = ({ item }) => {
       };
 
   return (
-    <div className="w-[100px] sm:w-[200px] lg:w-[220px] inline-block cursor-pointer relative p-2">
+    <div className="w-[130px] sm:w-[210px] lg:w-[220px] inline-block cursor-pointer relative p-2">
       <img
         className="w-full h-auto block"
-        src={`${item?.image}`}
-        alt={item?.title}
+        src={`${item?.animeImg}`}
+        alt={item?.animeTitle}
       />
       <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white">
         <p
           className="white-space-normal text-xs md:text-sm font-bol
                     flex justify-center items-center h-full text-center"
         >
-            {truncateString(item?.title, 30)}
+            {truncateString(item?.animeTitle, 30)}
         </p>
+        <p className="text-xs md:text-sm flex justify-center items-center
+                    text-center"><a href={<Details title={item?.animeTitle} />}>More..</a></p>
       </div>
       {/* <p>
         {like ? (
