@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomePage.css'
-import Popular from './Popular'
+// import Popular from './Popular'
 import TopAir from './TopAir'
 import requests from '../Requests'
 import Row from './Row'
@@ -9,15 +9,17 @@ import Video from './Video'
 import AnimeInfo from './AnimeInfo'
 import Info from './Info'
 import Nav from '../Nav'
+import SearchAnime from './Search'
 
 const HomePage = () => {
   return (
     <div className='home'>
         {/* <Navbar /> */}
         {/* <AnimeInfo /> */}
-        <Nav />
+        {/* <Nav /> */}
+        {/* <AnimeInfo /> */}
+        {/* <SearchAnime /> */}
         <Info />
-        {/* <Video/> */}
         <Row title='POPULAR'
           fetchUrl={requests.getPopular}
           isLargeRow
