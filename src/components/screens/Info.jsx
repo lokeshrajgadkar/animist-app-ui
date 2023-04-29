@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import requests from '../Requests'
 
 const Info = () => {
-  const url = `https://gogoanime.consumet.stream/recent-release`;
+  const url = requests.getRecent;
   const [animes, setAnimes] = useState([]);
   const anime = animes[Math.floor(Math.random() * animes.length)];
 
@@ -15,7 +16,6 @@ const Info = () => {
     } catch (err) {
       throw new Error(err.message);
     }
-    // getData();
   }, []);
 
   const truncateString = (str, num) => {
@@ -25,19 +25,6 @@ const Info = () => {
       return str;
     }
   };
-
-  async function getData() {
-    // try {
-    //   const res = await axios.get(url, { params: { page: 1, type: 3 } });
-    //   console.log(
-    //     "🚀 ~ file: Info.jsx:21 ~ getData ~ res.data:",
-    //     res.data
-    //   );
-    //   setAnimes(res.data);
-    // } catch (err) {
-    //   throw new Error(err.message);
-    // }
-  }
 
   return (
     <>
