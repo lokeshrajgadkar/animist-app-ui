@@ -1,7 +1,5 @@
 import React from 'react'
 import './HomePage.css'
-// import Popular from './Popular'
-import TopAir from './TopAir'
 import requests from '../Requests'
 import Row from './Row'
 import Navbar from '../Navbar'
